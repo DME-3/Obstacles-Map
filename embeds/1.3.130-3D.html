@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.3.130-3D.png</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        .image-container {
+            max-width: 400px;
+            cursor: pointer;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container" onclick="openImageInNewWindow()">
+        <img src="../images/1.3.130-3D.png" alt="1.3.130-3D.png">
+    </div>
+
+    <script>
+        function openImageInNewWindow() {
+            window.open('../images/1.3.130-3D.png', '_blank');
+        }
+    </script>
+</body>
+</html>
