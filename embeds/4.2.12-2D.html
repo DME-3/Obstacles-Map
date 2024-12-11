@@ -12,14 +12,29 @@
             align-items: center;
             height: 100vh;
             background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
         }
-        img {
-            max-width: 100%;
+        .image-container {
+            max-width: 400px;
+            cursor: pointer;
+        }
+        .image-container img {
+            width: 100%;
             height: auto;
+            border: 2px solid #ccc;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
-    <img src="../images/4.2.12-2D.png" alt="4.2.12-2D.png">
+    <div class="image-container" onclick="openImageInNewWindow()">
+        <img src="../images/4.2.12-2D.png" alt="4.2.12-2D.png">
+    </div>
+
+    <script>
+        function openImageInNewWindow() {
+            window.open('../images/4.2.12-2D.png', '_blank');
+        }
+    </script>
 </body>
 </html>
